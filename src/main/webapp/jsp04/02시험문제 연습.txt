@@ -1,0 +1,37 @@
+시험문제 연습
+
+1. DB 사용과 테이블 작성
+  1) MySQL로 mydb3 작성한다
+    
+    create database mydb3;
+    
+    use mydb3;
+  
+  2) test123 테이블을 작성 한다
+  
+    id		문자열(20) p.k
+    pw		문자열(20) not null
+    name	문자열(30) not null
+    email	문자열(40) not null
+    regdate	date
+    tel varchar(16)
+    addr varchar(50)
+    
+drop table test123;
+    
+create table test123(
+id varchar(20) primary key not null,
+pw varchar(20) not null,
+name varchar(30) not null,
+email varchar(40) not null,
+regdate date,
+zipcode varchar(7),
+tel varchar(16),
+addr varchar(50),
+addr2 varchar(16)
+);
+    
+    
+    jsp03 폴더\\
+      inputForm.jsp
+      inputPro.jsp

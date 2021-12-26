@@ -1,0 +1,27 @@
+1. DB 사용과 테이블 작성
+  1) MySQL로 mydb사용한다
+  2) test123 테이블을 작성 한다
+
+필드 :
+id 문자열(20) p.k
+pw 문자열(20) not null
+name 문자열(30) not null
+email 문자열(40) not null
+
+========================================
+drop table test122();
+
+create table test123(
+id varchar(20) primary key not null,
+pw varchar(20) not null,
+name varchar(30) not null,
+email varchar(40) not null
+);
+
+========================================
+jsp02 폴더/
+inputForm.jsp : 클라이언트 , 화면 디자인
+                                    힌트, 데이터 유효성 체크(javaScript 또는 jQuery 사용)
+                                 jQuery 사용
+                                 
+inputPro.jsp  : 서버단, insert작업
